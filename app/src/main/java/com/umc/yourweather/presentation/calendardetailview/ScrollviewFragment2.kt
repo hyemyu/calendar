@@ -6,13 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.appcompat.widget.AppCompatImageButton
 import com.umc.yourweather.R
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textview.MaterialTextView
-import com.umc.yourweather.presentation.adapter.CalendarDetailviewDiaryAdapter
+import com.umc.yourweather.presentation.adapter.DisplayTextAdapter
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -69,13 +68,13 @@ class ScrollviewFragment2 : Fragment() {
         // 1
         val viewManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, true)
         // 2
-        val viewAdapter = CalendarDetailviewDiaryAdapter()
+       // val viewAdapter = DisplayTextAdapter()
 
         // 3
         val recyclerView = rootView.findViewById<RecyclerView>(R.id.recyclerview_calendar_detailview2).apply {
             setHasFixedSize(true)
             layoutManager = viewManager
-            adapter = viewAdapter
+         //   adapter = viewAdapter
         }
 
         return rootView

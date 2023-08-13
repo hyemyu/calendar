@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textview.MaterialTextView
 import com.umc.yourweather.R
-import com.umc.yourweather.presentation.adapter.CalendarDetailviewDiaryAdapter
+import com.umc.yourweather.presentation.adapter.DisplayTextAdapter
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,7 +58,7 @@ class ScrollviewFragment1 : Fragment() {
         // Initialize the RecyclerView and its components
         recyclerView = rootView.findViewById<RecyclerView>(R.id.recyclerview_calendar_detailview)
         viewManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, true)
-        viewAdapter = CalendarDetailviewDiaryAdapter()
+        // viewAdapter = DisplayTextAdapter()
 
         // Configure the RecyclerView
         recyclerView.apply {

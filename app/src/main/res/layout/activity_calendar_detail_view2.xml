@@ -61,5 +61,52 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.375"></Button>
 
+    <TextView
+        android:id="@+id/tv_calendar_detailview1_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardregular"
+        android:text="7월 4일의 일기"
+        android:textAlignment="center"
+        android:textColor="#2B2B2B"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="389dp"
+        android:layout_height="399dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="40dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/pretendardregular"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:textColor="#F07818"
+        android:textFontWeight="600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/some_id"
+        tools:text="지금입력하기"
+        tools:textSize="10dp"/>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
